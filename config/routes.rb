@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   # 投稿完了のページにはいかないのでnewは削除
   # get "posts/new" , to:"posts#new"
   post 'posts', to: 'posts#create'
+
+  # queryパラメーターを使用して記述
+  get "posts" , to: "posts#checked"
 end
