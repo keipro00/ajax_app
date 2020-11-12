@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   post 'posts', to: 'posts#create'
 
   # queryパラメーターを使用して記述
-  get "posts" , to: "posts#checked"
+  # get "posts" , to: "posts#checked"
+
+  # こっちに変更したらできた？
+  get 'posts/:id', to: 'posts#checked'
 end
